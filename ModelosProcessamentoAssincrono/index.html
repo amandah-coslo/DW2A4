@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baralho de Cartas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Baralho de Cartas</h1>
+        <button id="gerarCartas">Gerar Novas Cartas</button>
+        <div class="card-info">
+            <h2>Nome das Cartas</h2>
+            <ol id="cartasSelecionadas" class="card-list"></ol>
+        </div>
+        <div class="card-display">
+            <h2>Cartas</h2>
+            <ol id="cartasSelecionadas2" class="card-list"></ol>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <button id="closeCode">Fechar</button>
+        <pre id="code"></pre>
+    </div>
+    
+    <div class="buttons-container">
+        <button id="showModelCode">Mostrar Modelo</button>
+        <button id="showViewCode">Mostrar Visualização</button>
+        <button id="showControllerCode">Mostrar Controlador</button>
+    </div>
+
+    <div class="menu-container">
+        <button id="menu"><a href="../src/index.html">Voltar ao Menu</a></button>
+    </div>
+
+    <script src="Model/modelBaralho.js"></script>
+    <script src="View/viewBaralho.js"></script>
+    <script src="Controller/controllerBaralho.js"></script>
+    <script src="./code.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Inicial</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Portfólio - Aprendendo a Aprender</h1>
+    </header>
+    <nav>
+        <div class="buttons-container"></div>
+            <ul>
+                <li>
+                    <a href="../Classes/index.html" title="Classe 
+> É uma estrutura que define um objeto com propriedades e métodos.
+> Serve como um molde para criar objetos com características semelhantes.
+> Uma classe pode conter variáveis (propriedades) e funções (métodos) que definem o comportamento do objeto.">Classe</a>
+                </li>
+                <li>
+                    <a href="../HerançaEPolimorfismo/index.html" title="Herança 
+> Em OO é quando uma classe deriva de outra classe
+> A classe filha (subclasse) herda as propriedades e métodos da classe mãe (superclasse)
+> Além disso, pode ter suas próprias propriedades e métodos.
+
+Polimorfismo
+> Em OO é a capacidade de uma subclasse especificar seu comportamento a partir de métodos pré-definidos.
+> A nível de código, significa reescrever um método da superclasse na subclasse.
+> Podendo determinar novos comportamentos desse método.
+                    ">Herança e Polimorfismo</a>
+                </li>
+                <li>
+                    <a href="../ModelosProcessamentoAssincrono/index.html" title="Modelo de Processamento Assíncrono - Promise 
+> É um objeto que representa a eventual conclusão ou falha de uma operação assíncrona.
+> Existem algumas formas de se trabalhar com processamento assíncrono (ou seja, Promises) em JavaScript: utilizando o método .then(), as palavras-chave async e await ou o objeto Promise e seus métodos.                   
+                    ">Modelo de Processamento Assíncrono</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <p>Bem-vindo ao portfólio que te ensina através de atividades produzidas em sala. Explore cada um dos temas para entender e saber mais...<br><br>
+            Todas as páginas possuem uma atividade e abaixo delas você encontrará três botões que representam o código da atividade com base no modelo MVC.
+        </p>
+    </main>
+    <div id="button-info">
+        <p>O MVC, que significa Modelo-Visão-Controlador, é uma arquitetura padrão utilizada em muitos frameworks e aplicativos para desenvolvimento de software. Esse padrão ajuda a organizar o código de uma aplicação, separando as responsabilidades em três componentes principais: Modelo, Visão e Controlador.</p>
+        <div class="code-container">
+            <button id="closeCode">Fechar</button>
+            <pre id="code"></pre>
+        </div>
+
+        <div class="buttons-container">
+            <button id="showModelCode">Mostrar Modelo</button>
+            <button id="showViewCode">Mostrar Visualização</button>
+            <button id="showControllerCode">Mostrar Controlador</button>
+        </div>
+    </div>
+
+    <script src="./code.js"></script>
+
+
+</body>
+</html>

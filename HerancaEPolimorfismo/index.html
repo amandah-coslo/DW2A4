@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Desconto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Desconto</h1>
+
+        <div class="product-input">
+            <h2>Smartwatch</h2>
+            <label for="smartwatchName">Nome do Produto:</label>
+            <input type="text" id="smartwatchName" placeholder="Nome do smartwatch">
+            <label for="smartwatchDescription">Descrição:</label>
+            <input type="text" id="smartwatchDescription" placeholder="Descrição do smartwatch">
+            <label for="smartwatchPrice">Preço:</label>
+            <input type="number" id="smartwatchPrice" placeholder="Preço do smartwatch">
+            <label for="smartwatchDiscount">Desconto (%):</label>
+            <input type="number" id="smartwatchDiscount" placeholder="Desconto em %">
+        </div>
+
+        <div class="product-input">
+            <h2>Smartphone</h2>
+            <label for="smartphoneName">Nome do Produto:</label>
+            <input type="text" id="smartphoneName" placeholder="Nome do smartphone">
+            <label for="smartphoneDescription">Descrição:</label>
+            <input type="text" id="smartphoneDescription" placeholder="Descrição do smartphone">
+            <label for="smartphonePrice">Preço:</label>
+            <input type="number" id="smartphonePrice" placeholder="Preço do smartphone">
+            <label for="smartphoneDiscount">Desconto (%):</label>
+            <input type="number" id="smartphoneDiscount" placeholder="Desconto em %">
+        </div>
+
+        <div class="product-input">
+            <h2>Laptop</h2>
+            <label for="laptopName">Nome do Produto:</label>
+            <input type="text" id="laptopName" placeholder="Nome do laptop">
+            <label for="laptopDescription">Descrição:</label>
+            <input type="text" id="laptopDescription" placeholder="Descrição do laptop">
+            <label for="laptopPrice">Preço:</label>
+            <input type="number" id="laptopPrice" placeholder="Preço do laptop">
+            <label for="laptopDiscount">Desconto (%):</label>
+            <input type="number" id="laptopDiscount" placeholder="Desconto em %">
+        </div>
+
+        <button id="calculateDiscount">Calcular Desconto</button>
+
+        <div id="productOutput">
+            <h2>Resultados</h2>
+            <div class="output-container" id="smartwatchOutput">
+                <h3>Smartwatch</h3>
+                <p><strong>Nome:</strong> <span id="outputSmartwatchName"></span></p>
+                <p><strong>Descrição:</strong> <span id="outputSmartwatchDescription"></span></p>
+                <p><strong>Preço:</strong> R$<span id="outputSmartwatchPrice"></span></p>
+                <p><strong>Desconto:</strong> R$<span id="outputSmartwatchDiscountedPrice"></span></p>
+            </div>
+            <div class="output-container" id="smartphoneOutput">
+                <h3>Smartphone</h3>
+                <p><strong>Nome:</strong> <span id="outputSmartphoneName"></span></p>
+                <p><strong>Descrição:</strong> <span id="outputSmartphoneDescription"></span></p>
+                <p><strong>Preço:</strong> R$<span id="outputSmartphonePrice"></span></p>
+                <p><strong>Desconto:</strong> R$<span id="outputSmartphoneDiscountedPrice"></span></p>
+            </div>
+            <div class="output-container" id="laptopOutput">
+                <h3>Laptop</h3>
+                <p><strong>Nome:</strong> <span id="outputLaptopName"></span></p>
+                <p><strong>Descrição:</strong> <span id="outputLaptopDescription"></span></p>
+                <p><strong>Preço:</strong> R$<span id="outputLaptopPrice"></span></p>
+                <p><strong>Desconto:</strong> R$<span id="outputLaptopDiscountedPrice"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="code-container">
+        <button id="closeCode">Fechar</button>
+        <pre id="code"></pre>
+    </div>
+    
+    <div class="buttons-container">
+        <button id="showModelCode">Mostrar Modelo</button>
+        <button id="showViewCode">Mostrar Visualização</button>
+        <button id="showControllerCode">Mostrar Controlador</button>
+    </div>
+
+    <div class="menu-container">
+        <button id="menu"><a href="../src/index.html">Voltar ao Menu</a></button>
+    </div>
+    
+    <script src="./Model/modelCalculadoraDesconto.js"></script>
+    <script src="./View/viewCalculadoraDesconto.js"></script>
+    <script src="./Controller/controllerCalculadoraDesconto.js"></script>
+    <script src="./code.js"></script>
+</body>
+</html>
+
+
+

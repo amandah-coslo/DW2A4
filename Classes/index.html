@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Desconto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Desconto</h1>
+        <div id="productInput">
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" placeholder="Nome do produto">
+            <label for="productDescription">Descrição:</label>
+            <input type="text" id="productDescription" placeholder="Descrição do produto">
+            <label for="productPrice">Preço:</label>
+            <input type="number" id="productPrice" placeholder="Preço do produto">
+            <label for="productDiscount">Desconto (%):</label>
+            <input type="number" id="productDiscount" placeholder="Desconto em %">
+            <button id="calculateDiscount">Calcular Desconto</button>
+        </div>
+        <div id="productOutput">
+            <h2>Resultado</h2>
+            <p><strong>Nome:</strong> <span id="outputProductName"></span></p>
+            <p><strong>Descrição:</strong> <span id="outputProductDescription"></span></p>
+            <p><strong>Preço:</strong> R$<span id="outputProductPrice"></span></p>
+            <p><strong>Desconto:</strong> R$<span id="outputDiscountedPrice"></span></p>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <button id="closeCode">Fechar</button>
+        <pre id="code"></pre>
+    </div>
+    
+    <div class="buttons-container">
+        <button id="showModelCode">Mostrar Modelo</button>
+        <button id="showViewCode">Mostrar Visualização</button>
+        <button id="showControllerCode">Mostrar Controlador</button>
+    </div>
+
+    <div class="menu-container">
+        <button id="menu"><a href="../src/index.html">Voltar ao Menu</a></button>
+    </div>
+
+    <script src="Model/modelProduto.js"></script>
+    <script src="View/viewProduto.js"></script>
+    <script src="Controller/controllerProduto.js"></script>
+    <script src="./code.js"></script>
+</body>
+</html>

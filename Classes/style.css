@@ -1,0 +1,107 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFC72C; /* Cor de fundo alegre */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px; /* Largura reduzida para 400px */
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ccc; /* Adiciona borda */
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Centraliza verticalmente os elementos */
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007BFF; /* Cor alegre para o título */
+    margin: 0 0 20px;
+}
+
+button {
+    background-color: #FF5733; /* Cor de botão alegre */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 0 10px; /* Adiciona espaço inferior para separar os botões */
+}
+
+button:hover {
+    background-color: #FF421F; /* Cor mais escura ao passar o mouse */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-container {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#productOutput {
+    margin-top: 20px;
+    display: none;
+}
+
+/* Estilo para a área de exibição do código */
+.code-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow: auto;
+    min-height: 200px; /* Altere a altura mínima para ajustar o tamanho da área de exibição */
+    display: none;
+    padding: 10px;
+}
+
+#code {
+    margin: 0;
+    padding: 10px;
+}
+
+#closeCode {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    display: inline-block;
+}
+
+#closeCode:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o contêiner dos botões */
+.buttons-container {
+    text-align: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px;
+}
